@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		74321B892DE129A60014D825 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74321B882DE129A60014D825 /* IQKeyboardManagerSwift */; };
+		74321B8C2DE129C50014D825 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 74321B8B2DE129C50014D825 /* Kingfisher */; };
+		74321B8F2DE129E30014D825 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 74321B8E2DE129E30014D825 /* NVActivityIndicatorView */; };
+		74321B912DE129E30014D825 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 74321B902DE129E30014D825 /* NVActivityIndicatorViewExtended */; };
+		74321C222DE1309F0014D825 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74321C212DE1309F0014D825 /* RxSwift */; };
+		74321C692DE1758E0014D825 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 74321C682DE1758E0014D825 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		74321B6D2DE128E20014D825 /* Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74321B8C2DE129C50014D825 /* Kingfisher in Frameworks */,
+				74321B912DE129E30014D825 /* NVActivityIndicatorViewExtended in Frameworks */,
+				74321C222DE1309F0014D825 /* RxSwift in Frameworks */,
+				74321C692DE1758E0014D825 /* Alamofire in Frameworks */,
+				74321B892DE129A60014D825 /* IQKeyboardManagerSwift in Frameworks */,
+				74321B8F2DE129E30014D825 /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,12 @@
 			);
 			name = Blog;
 			packageProductDependencies = (
+				74321B882DE129A60014D825 /* IQKeyboardManagerSwift */,
+				74321B8B2DE129C50014D825 /* Kingfisher */,
+				74321B8E2DE129E30014D825 /* NVActivityIndicatorView */,
+				74321B902DE129E30014D825 /* NVActivityIndicatorViewExtended */,
+				74321C212DE1309F0014D825 /* RxSwift */,
+				74321C682DE1758E0014D825 /* Alamofire */,
 			);
 			productName = Blog;
 			productReference = 74321B6D2DE128E20014D825 /* Blog.app */;
@@ -107,6 +128,13 @@
 			);
 			mainGroup = 74321B642DE128E20014D825;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				74321B872DE129A60014D825 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				74321B8A2DE129C50014D825 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				74321B8D2DE129E30014D825 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				74321C202DE1309F0014D825 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				74321C672DE1758E0014D825 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 74321B6E2DE128E20014D825 /* Products */;
 			projectDirPath = "";
@@ -149,9 +177,10 @@
 				INFOPLIST_FILE = Blog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,9 +205,10 @@
 				INFOPLIST_FILE = Blog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +363,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74321B872DE129A60014D825 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		74321B8A2DE129C50014D825 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+		74321B8D2DE129E30014D825 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		74321C202DE1309F0014D825 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		74321C672DE1758E0014D825 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74321B882DE129A60014D825 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321B872DE129A60014D825 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		74321B8B2DE129C50014D825 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321B8A2DE129C50014D825 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		74321B8E2DE129E30014D825 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321B8D2DE129E30014D825 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		74321B902DE129E30014D825 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321B8D2DE129E30014D825 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		74321C212DE1309F0014D825 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321C202DE1309F0014D825 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		74321C682DE1758E0014D825 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74321C672DE1758E0014D825 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74321B652DE128E20014D825 /* Project object */;
 }
