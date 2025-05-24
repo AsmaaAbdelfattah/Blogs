@@ -41,6 +41,7 @@ class HomeVC: UIViewController {
             self?.indicator.showIndicator(start: false)
             if let _ = self?.vm.blogs {
                 self?.blogsTB.isHidden = false
+                self?.emptyLbl.isHidden = true
                 self?.blogsTB.reloadData()
             }
         }
